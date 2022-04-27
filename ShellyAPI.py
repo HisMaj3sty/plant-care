@@ -101,7 +101,7 @@ class ShellyPlug():
         status = result[0]
         if status == 0:
             return True
-        else 
+        else:
             raise ConnectionError(f"Failed to send message to topic {topic}:\n {self.MQTT_ERRORS[status]}")
 
 
