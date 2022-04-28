@@ -16,10 +16,10 @@ while True:
     now = datetime.now()
     now_st = f"{now.hour}:{now.minute}"
 
-    if now == on:
+    if now_st == on:
         print("Onning")
         shp.send_command("on")
-    if now == off:
+    if now_st == off:
         print("Offing")
         shp.send_command("off")
 
